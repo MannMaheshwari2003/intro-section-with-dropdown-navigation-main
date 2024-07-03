@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap - Make Remote Work</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="navbar">
+            <div class="logo">snap</div>
+            <!-- <button class="menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Features</a>
+                    <ul class="dropdown-menu">
+                        <li><img src="images/icon-todo.svg" alt="Todo List Icon"> Todo List</li>
+                        <li><img src="images/icon-calendar.svg" alt="Calendar Icon"> Calendar</li>
+                        <li><img src="images/icon-reminders.svg" alt="Reminders Icon"> Reminders</li>
+                        <li><img src="images/icon-planning.svg" alt="Planning Icon"> Planning</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Company</a>
+                    <ul class="dropdown-menu">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Make remote work</h1>
+                <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+                <button class="learn-more">Learn more</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/image-hero-desktop.png" alt="Hero Image">
+            </div>
+        </section>
+        <section class="partners">
+            <ul>
+                <li><img src="images\client-databiz.svg"></li>
+                <li><img src="images\client-audiophile.svg"></li>
+                <li><img src="images\client-meet.svg"></li>
+                <li><img src="images\client-maker.svg"></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

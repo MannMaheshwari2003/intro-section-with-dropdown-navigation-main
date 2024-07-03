@@ -1,0 +1,235 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    max-width: 1440px; 
+    margin: 0 auto; 
+    padding: 20px; /* Add padding around the body */
+}
+
+#header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.logo {
+    font-size: 36px; /* Increased font size for the logo */
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    border-radius: 8px;
+}
+
+.nav-links a:hover {
+    color: white;
+    background-color: hsl(0, 0%, 41%);
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: opacity 0.3s, visibility 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    color: hsl(0, 0%, 41%);
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+
+.dropdown-menu li:hover {
+    background-color: hsl(0, 0%, 41%);
+    color: white;
+}
+
+.dropdown-menu li img {
+    margin-right: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    border: 1px solid hsl(0, 0%, 8%);
+    background: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-buttons button:hover {
+    background-color: hsl(0, 0%, 41%);
+    color: white;
+}
+
+.auth-buttons .register {
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+
+.auth-buttons .register:hover {
+    background-color: hsl(0, 0%, 41%);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+    max-width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 60px; 
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 8%);
+}
+
+.hero-text p {
+    font-size: 24px; 
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 41%);
+}
+
+.hero-text .learn-more {
+    padding: 15px 30px;
+    border: none;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-text .learn-more:hover {
+    background-color: hsl(0, 0%, 41%);
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.partners {
+    background-color: white;
+    padding: 40px 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    max-width: 100%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+.partners ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.partners li {
+    margin: 0 20px;
+    font-size: 24px; 
+    font-weight: bold;
+    color: hsl(0, 0%, 41%);
+    transition: color 0.3s, transform 0.3s;
+}
+
+.partners li:hover {
+    color: hsl(0, 0%, 8%);
+    transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .partners ul {
+        flex-direction: column;
+    }
+
+    .partners li {
+        margin: 10px 0;
+    }
+}
